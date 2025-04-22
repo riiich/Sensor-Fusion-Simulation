@@ -19,6 +19,7 @@ struct Vector3D {
 
     Vector3D normalize() const;
     double magnitude() const;
+    double distance(const Vector3D& other) const;
 
     // friend function to print vector
     friend std::ostream& operator <<(std::ostream& os, const Vector3D& vec);

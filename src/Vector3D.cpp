@@ -32,6 +32,10 @@ double Vector3D::magnitude() const {
     return sqrt(pow(this->x, 2) + pow(this->y, 2) + pow(this->z, 2));
 }
 
+double Vector3D::distance(const Vector3D& other) const {
+    return (*this - other).magnitude();
+}
+
 std::ostream& operator<<(std::ostream& os, const Vector3D& vec) {
     os << "(" << vec.x << ", " << vec.y << ", " << vec.z << ")";
 

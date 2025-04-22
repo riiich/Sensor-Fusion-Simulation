@@ -11,9 +11,12 @@ include_directories(include)
 
 # Add your executable target
 add_executable(sim_app src/main.cpp
-                       src/Vector3D.cpp
-                       src/Target.cpp
-                       # Add other .cpp files here as you create them
+                        src/Vector3D.cpp
+                        src/Target.cpp
+                        src/Sensor.cpp
+                        src/RadarSensor.cpp
+                        src/Track.cpp
+                        src/Tracker.cpp
                       )
 
 # Optional: Improve build output location (especially for multi-config generators like VS)
